@@ -1,0 +1,41 @@
+.header {
+  &__container {
+    padding: 10px 25px;
+  }
+
+  &__search {
+    width: 670px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #f8fafd;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search i {
+    padding: 8px 16px;
+    color: black;
+  }
+
+  &__search input {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &__logout {
+    width: 99px;
+    background: #0d75ff;
+    border-radius: 4px;
+    border: transparent;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .light-night {
+    background: transparent;
+    border: transparent;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,73 @@
+.canvas {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__img {
+    width: 130px;
+    height: 150px !important;
+    margin-bottom: 10px;
+  }
+
+  &__item-book {
+    margin: 0;
+    padding: 5px 10px;
+    color: #0d75ff;
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+    margin-left: 10px;
+  }
+
+  &__desc {
+    font-family: "Rubik";
+    font-size: 13px;
+    line-height: 170.3%;
+    color: #58667e;
+  }
+
+  &__footer {
+    padding: 15px;
+    background: #f8fafd;
+  }
+
+  &__read-btn {
+    border: transparent;
+    padding: 5px 15px;
+    background: #75828a;
+    border-radius: 4px;
+    margin-left: 290px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offcanvas-header,
+  .offcanvas-body,
+  &__list {
+    padding: 0 20px !important;
+  }
+
+  .offcanvas-header {
+    background: #f8fafd;
+    padding-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}

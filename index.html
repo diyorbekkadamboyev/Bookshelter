@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Bookshelter</title>
+  </head>
+  <body class="d-flex flex-column">
+    <!-- HEADER -->
+    <header class="header">
+      <div
+        class="home-container header__container d-flex justify-content-between align-items-center"
+      >
+        <a href="#"><img src="./img/bookshelter-logo.svg" alt="logo" /></a>
+        <form class="search-form">
+          <div class="header__search">
+            <span><i class="fa fa-search"></i></span>
+            <input
+              id="searchInput"
+              class="header__input"
+              name="search"
+              type="text"
+              placeholder="Search books"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </form>
+        <div class="header__btns">
+          <button class="light-night">
+            <img src="./img/light-icon.svg" alt="icon" />
+          </button>
+          <button id="logout" class="header__logout">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="home-container">
+        <h1 class="visually-hidden">Hello world !</h1>
+        <div class="main__top d-flex align-items-center">
+          <p class="main__result">
+            Showing
+            <span class="text-primary" id="showResult">18</span> Result(s)
+          </p>
+          <button class="main__orderbtn">
+            <img src="./img/calendar.svg" alt="calendar-icon" /> Order by newest
+          </button>
+        </div>
+        <div class="main__contents">
+          <div class="bookmark">
+            <h2 class="bookmark__heading">Bookmarks</h2>
+            <p class="bookmark__desc">
+              If you don’t like to read, you haven’t found the right book
+            </p>
+            <ul class="bookmark__list">
+            </ul>
+          </div>
+          <div class="cards">
+            <h2 class="cards-default mt-5 mb-5 text-center visually-hidden" id="cardsDefault">Kitoblar topilmadi!</h2>
+            <div class="books row justify-content-evenly">
+            </div>
+            <div
+              class="pagination d-flex flex-wrap justify-content-center"
+              id="pagination"
+            >
+              <button class="prev-btn" id="prevBtn">
+                <img src="./img/prev-icon.svg" alt="prev icon" />
+              </button>
+                <div class="pagination__btns d-flex">
+                </div>
+              <button class="next-btn" id="nextBtn">
+                <img src="./img/next.svg" alt="next icon" />
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- CANVAS -->
+    <div class="canvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

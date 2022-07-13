@@ -1,0 +1,28 @@
+.main {
+  flex-grow: 1;
+
+  &__top {
+    padding: 11px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  &__contents {
+    display: flex;
+    flex-grow: 1;
+  }
+  &__result {
+    font-family: "Rubik";
+    margin: 0;
+    margin-left: 333px;
+    margin-right: auto;
+  }
+
+  &__orderbtn {
+    font-family: "Rubik";
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px 13px;
+    background: #a6b0c3;
+    color: white;
+  }
+}

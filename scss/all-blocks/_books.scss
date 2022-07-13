@@ -1,0 +1,92 @@
+.books {
+  overflow-y: auto;
+  max-height: 500px;
+  
+  &__card {
+    background-color: white;
+    width: 285px;
+    padding: 13px 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-img {
+    background: #f8fafd;
+    width: 250px;
+    height: 240px;
+    padding: 18px 22px;
+    margin-bottom: 15px;
+  }
+
+  &__img {
+    width: 201px;
+    height: 201px !important;
+  }
+
+  &__name {
+    margin: 0;
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 3px;
+  }
+
+  &__author,
+  &__year {
+    margin: 0;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+  }
+
+  &__year {
+    margin-bottom: 10px;
+  }
+
+  &__btns {
+    width: 247px;
+    margin-top: auto;
+  }
+
+  &__bookmark-btn,
+  &__info-btn,
+  &__read-btn {
+    border-radius: 4px;
+    padding: 10px;
+    border: transparent;
+    font-family: "Rubik";
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__bookmark-btn {
+    width: 120px;
+    background: #ffd80d;
+  }
+
+  &__info-btn {
+    width: 120px;
+    background: rgba(13, 117, 255, 0.05);
+    color: #0d75ff;
+  }
+
+  &__read-btn {
+    width: 245px;
+    background: #75828a;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+.cards {
+  width: 997px;
+  background: #f8fafd;
+  padding-top: 30px;
+}

@@ -1,0 +1,35 @@
+.pagination {
+  padding-top: 10px;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &__btns {
+    max-width: 400px;
+    overflow-x: auto;
+  }
+
+  .prev-btn,
+  .next-btn,
+  .books-btn {
+    border: 1px solid #dfe3e8;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .next-btn {
+    margin-left: 5px;
+  }
+  .activeBtn {
+    border-color: dodgerblue;
+  }
+
+  .prev-bg {
+    background-color: dimgray;
+  }
+}
